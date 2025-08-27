@@ -1,6 +1,10 @@
 import FeaturedCourses from "@/components/FeaturedCourses";
 import HeroSection from "@/components/HeroSection";
+import WhyChooseUs from "@/components/WhyChooseUs";
+import MusicAcademyTestimonial from "@/components/TestimonialCards";
 import { main } from "motion/react-client";
+import UpcomingWebinar from "@/components/UpcomingWebinar";
+import Instructors from "@/components/Instructors";
 
 
 export default function Home() {
@@ -10,6 +14,10 @@ export default function Home() {
       {/* importing hero section */}
       <HeroSection/>
       <FeaturedCourses/>
+      <WhyChooseUs/>
+      <MusicAcademyTestimonial/>
+      <UpcomingWebinar/>
+      <Instructors/>
     </main>
   );
 }
