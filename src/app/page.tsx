@@ -5,7 +5,8 @@ import MusicAcademyTestimonial from "@/components/TestimonialCards";
 import { main } from "motion/react-client";
 import UpcomingWebinar from "@/components/UpcomingWebinar";
 import Instructors from "@/components/Instructors";
-
+import Footer from '@/components/Footer';
+import MusicSchoolContactUs from "./contact/page";
 
 export default function Home() {
   return (
@@ -18,6 +19,8 @@ export default function Home() {
       <MusicAcademyTestimonial/>
       <UpcomingWebinar/>
       <Instructors/>
+      <Footer/>
+      <MusicSchoolContactUs/>
     </main>
   );
 }
