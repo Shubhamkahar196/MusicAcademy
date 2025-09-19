@@ -127,8 +127,10 @@ export const AnimatedTooltip = ({
       cancelAnimationFrame(animationFrameRef.current);
     }
     animationFrameRef.current = requestAnimationFrame(() => {
-      const halfWidth = event.currentTarget.offsetWidth / 2;
-      x.set(event.nativeEvent.offsetX - halfWidth);
+      if (event.currentTarget) {
+        const halfWidth = event.currentTarget.offsetWidth / 2;
+        x.set(event.nativeEvent.offsetX - halfWidth);
+      }
     });
   };
 
